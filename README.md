@@ -1,18 +1,31 @@
-# 70akaline Local
+# 70akaline Homebrew Tap
 
-## How do I install these formulae?
+Homebrew formulae for scientific and tensor-computing libraries.
 
-`brew install 70akaline/local/<formula>`
+## Install
 
-Or `brew tap 70akaline/local` and then `brew install <formula>`.
+```sh
+brew tap 70akaline/local
+brew install ctf
+brew install tblis
+```
 
-Or, in a `brew bundle` `Brewfile`:
+Direct installation without a separate tap command is also supported:
+
+```sh
+brew install 70akaline/local/ctf
+brew install 70akaline/local/tblis
+```
+
+## Formulae
+
+- `ctf`: Cyclops Tensor Framework, including the C++ library and its Python bindings.
+- `tblis`: Tensor-Based Library Instantiation Software, built against Homebrew BLIS.
+
+For a `Brewfile`:
 
 ```ruby
 tap "70akaline/local"
-brew "<formula>"
+brew "ctf"
+brew "tblis"
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
