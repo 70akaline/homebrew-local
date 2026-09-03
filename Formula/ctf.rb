@@ -6,6 +6,10 @@ class Ctf < Formula
   version "1.5.5-dev-20260727"
   license "BSD-3-Clause"
 
+  livecheck do
+    skip "Pinned to an untagged development revision"
+  end
+
   depends_on "cython" => :build
   depends_on "python-setuptools" => :build
   depends_on "numpy"
