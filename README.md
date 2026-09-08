@@ -22,19 +22,19 @@ brew install 70akaline/local/tblis
 - `ctf`: Cyclops Tensor Framework, including the C++ library and its Python bindings.
 - `tblis`: Tensor-Based Library Instantiation Software, built against Homebrew BLIS.
 
-## Local desktop build
+## AgentsView desktop
 
-`agentsview` installs a locally compiled AgentsView desktop app, not an upstream
-release. Its versioned ZIP must already exist under
-`$(brew --prefix)/var/agentsview-local/` and match the cask's SHA-256.
+`agentsview` installs the macOS Apple Silicon desktop app from
+[70akaline/agentsview releases](https://github.com/70akaline/agentsview/releases),
+with a pinned version and SHA-256. No pre-existing local ZIP is required.
 
 ```sh
 brew install --cask 70akaline/local/agentsview
 ```
 
-The archive is a source snapshot: editing the checkout does not rebuild the
-installed app. Rebuild and package the app, then update the cask version and
-checksum before reinstalling. Local builds do not use the upstream app updater.
+The release is a fork snapshot, with an ad-hoc signature rather than Apple
+notarization. Updates are distributed through this tap; the upstream app updater
+is disabled. New source changes require a new release and cask update.
 
 For a `Brewfile`:
 
