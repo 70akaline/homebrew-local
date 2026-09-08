@@ -1,6 +1,6 @@
 cask "agentsview" do
-  version "0.42.0-local.292ef986"
-  sha256 "782bec9a9da57947ca2cb2c699de3e76af9c884544d4391e8afa8e5a9afdf8f0"
+  version "0.42.0-local.907ef13e"
+  sha256 "a6b3af7a32f1aefbc32df4e88276818640929927971d9ca01b29ccb3d517a39c"
 
   url "file://#{HOMEBREW_PREFIX}/var/agentsview-local/agentsview-#{version}.zip"
   name "AgentsView"
